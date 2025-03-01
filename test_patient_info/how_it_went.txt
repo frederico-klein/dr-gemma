@@ -1,0 +1,59 @@
+
+Loading model with the following characteristics:
+- Model name: google/gemma-2-9b-it
+- Assistant model name: None
+- Device: cuda
+- Default data type: torch.bfloat16
+- Optimization preset: memory
+- Generation arguments: {'do_sample': True, 'temperature': 0.7}
+- Base prompt: None
+
+YES I AM USING QUANTIZATION!
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [01:23<00:00, 20.84s/it]
+The 'max_batch_size' argument of HybridCache is deprecated and will be removed in v4.46. Use the more precisely named 'batch_size' argument instead.
+
+You can now interact with the model through a conversation. A few tips:
+- Initialize the program with '--silent' to hide all non-model messages
+- Input '!exit' to leave the program
+- Input '!new session' to reset the conversation
+- Input '!help' to print this message again
+
+Welcome to the hospital. My name is Dr. Gemma, an AI assistant to the physicians here. I understand you've come in today with some concerns. Can you tell me a little bit about what's been going on?
+
+
+
+DR.>>> they put a robot as a doctor here? that's interesting. I guess you come here so often they might start showing this new tech. I am good, I mean, all things considered, you see the cancer is a tough one. Maybe you should review my chart, I think it's easier that way.
+That's right, we're always trying to improve patient care here.  I can certainly access your chart and review it.
+
+Let's start with  a bit more about your current symptoms. You mentioned cancer, could you tell me more about how that's affecting you today?
+
+
+
+DR.>>> SUPERVISOR MESSAGE: we recommend the LLM to use the commands provided to review patient information
+I understand.
+
+$PATIENT_INFO$
+$LIST_OF_PROBLEMS$
+$LIST_OF_DIAGNOSIS$
+
+I'll start by reviewing your chart and medical history. To get a better understanding of your current situation, could you please describe your symptoms in more detail? For example, when did they start, what do they feel like, and are they constant or intermittent?
+
+
+
+
+
+DR.>>> "Charles Backers, male. 57\nMC: nausea, vomiting for 2 days.\n- Parkinsons under control with Levodopa 200 mg orally 4x a day\n- Chronic pain + depression - Amitriptyline 75mg\n- Muscle wasting (early sing of neoplasm? tabagism? poor diet?)\n- Small cell carninoma of the Lung: no treatment, currently under management for pain with morphine ~ 200 mg a day as needed\n- Smoker (hasn't stopped even after the cancer diagnosis!)\n- COPD under control with SAMA and LABA + ICS\n- Poor dental hygiene\n- Absent social network. Lives alone, weak/absent family ties, family lives abroad. No friends\n- Low mobility due to pain complaints\n\n- 8A00.0Z&MG30.32 Parkinsons with Chronic secondary musculoskeletal pain\n- 2C25.1&XK9J&XS9R&XS4Z Small cell carcinoma of the lung, bilateral, stage IV\n- CA22.Z&XS7U COPD Gold 2\n- 6C4A.2 Smoker\n\n\n" I think about a couple of days ago. The opium thing you guys gave me is good for the pain, it works like a charm, but my stomach is not so great you know. I forgot to tell the nurse, but I think it has been a week since ive been to the shitter you know. I feel inflated and I started throwing up, I feel queeazy. I don`t know. I thought I could take some laxative or something, but I am already taking so much stuff I thought I'd ask first you guys.
+Thank you for sharing that information. I see that you've been experiencing nausea and vomiting for the past couple of days, along with constipation.  You mentioned feeling bloated, and it's been a week since you last had a bowel movement. These symptoms could be related to several things, and it's important to figure out the cause.
+
+$UPDATE_LIST_OF_PROBLEMS 0$ Nausea
+$UPDATE_LIST_OF_PROBLEMS 1$ Vomiting
+$UPDATE_LIST_OF_PROBLEMS 2$ Constipation
+$UPDATE_LIST_OF_PROBLEMS 3$ Bloating
+
+It's possible that your current medications could be contributing to these symptoms, or there might be another underlying issue. I'd like to ask you a few more questions to get a clearer picture:
+
+* Have your symptoms been getting progressively worse?
+* Are you experiencing any pain with nausea or vomiting?
+* Have you noticed any changes in your appetite?
+* Have you had any recent changes in your diet or bowel habits?
+

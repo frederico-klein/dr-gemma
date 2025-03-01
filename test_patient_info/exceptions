@@ -1,0 +1,11 @@
+So here i think it is important to have some supervision of the LLM. 
+
+So we check if they did the things appropriately, like , did they tick all the boxes, 
+
+One of the things I had to do is complain that the LLM didn't ask for the patients' chart data. 
+
+This is what I did:
+
+SUPERVISOR MESSAGE: we recommend the LLM to use the commands provided to review patient information
+
+
